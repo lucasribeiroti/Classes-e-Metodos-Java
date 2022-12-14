@@ -1,18 +1,11 @@
 package Classe;
 
-public class ProdutoTeste {
-
+public class SegundoProdutoTeste {
     public static void main(String[] args) {
 
-        Produto p1 = new Produto();
-        p1.nome = "Notebook";
-        p1.preco = 4356.89;
-        p1.desconto = 0.25;
+        SegundoProduto p1 = new SegundoProduto("Notebook", 4356.89, 0.25);
 
-        var p2 = new Produto();
-        p2.nome = "Smartphone";
-        p2.preco = 1899.90;
-        p2.desconto = 0.29;
+        SegundoProduto p2 = new SegundoProduto("Smartphone", 1899.90, 0.29);
 
         double precoFinal1 = p1.precoComDesconto(0.0);
         double precoFinal2 = p2.precoComDesconto(0.0);
